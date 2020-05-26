@@ -1,5 +1,5 @@
 #include <iostream>
-#include<stack>
+#include<stack>  //HERE TRICK IS TO USE STACK AND QUEUE LIBRARIES
 #include<queue>
 
 using namespace std;
