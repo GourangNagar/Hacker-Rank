@@ -1,0 +1,10 @@
+n = int(input())
+a = list(map(int,input().strip().split()))[:n] 
+a.sort()
+run=a[n-1]
+i=len(a)
+while(i>0):
+    i=i-1
+    if a[i]<run:
+        print(a[i])
+        break
