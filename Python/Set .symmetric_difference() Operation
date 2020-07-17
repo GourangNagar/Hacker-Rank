@@ -1,0 +1,8 @@
+a=int(input())
+l1 = list(map(int,input().strip().split()))[:a]
+set1=set(l1)
+b=int(input())
+l2 = list(map(int,input().strip().split()))[:b]
+set2=set(l2)
+ans=list(set1.symmetric_difference(set2))
+print(len(ans))
