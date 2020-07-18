@@ -1,7 +1,23 @@
 def swap_case(s):
+   result_str = ""
+   for item in s:
+       if item.isupper():
+           result_str += item.lower()
+       else:
+           result_str += item.upper()           
+   return result_str
+   
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+    
+'''    
+def swap_case(s):
     return s.swapcase()
 
 if __name__ == '__main__':
     s = input()
     result = swap_case(s)
     print(result)
+'''
