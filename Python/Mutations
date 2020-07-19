@@ -1,0 +1,19 @@
+def mutate_string(string, position, character):
+    lst=list(string)
+    lst[position]=character
+    lst="".join(lst)
+    return lst
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
+    
+'''
+If we just want just print without returning anything 
+just use simple code
+
+string = string [ :position] + character + string [ position+1 :]
+print(string)
+'''
