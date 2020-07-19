@@ -1,0 +1,38 @@
+if __name__ == '__main__':
+    s = input()
+    alphanumeric=0
+    alphabetical=0
+    digits=0
+    lowercase=0
+    uppercase=0
+    for i in range(len(s)):
+        if(s[i].isalnum()):
+            alphanumeric+=1
+        if(s[i].isalpha()):
+            alphabetical+=1
+        if(s[i].isdigit()):
+            digits+=1
+        if(s[i].islower()):
+            lowercase+=1
+        if(s[i].isupper()):
+            uppercase+=1
+    if(alphanumeric>0):
+        print(True)
+    else:
+        print(False)
+    if(alphabetical>0):
+        print(True)
+    else:
+        print(False)
+    if(digits>0):
+        print(True)
+    else:
+        print(False)
+    if(lowercase>0):
+        print(True)
+    else:
+        print(False)
+    if(uppercase>0):
+        print(True)
+    else:
+        print(False)
