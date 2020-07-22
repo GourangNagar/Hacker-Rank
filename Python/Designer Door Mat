@@ -1,0 +1,11 @@
+m,n = map(int, input().split())
+s=".|."
+i=1
+while(i<m):
+    print((s*i).center(n,'-'))
+    i=i+2
+print("WELCOME".center(n,'-'))
+i=m-2
+while(i>0):
+    print((s*i).center(n,'-'))
+    i=i-2
