@@ -1,0 +1,7 @@
+from itertools import product
+
+a=map(int,input().split())
+b=map(int,input().split())
+A=product(a,b)
+for i in A:
+    print(i,end=" ")
